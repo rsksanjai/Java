@@ -1,0 +1,23 @@
+package javaapplication4;
+import pack1.MathOperations;
+import pack2.StringOperations;
+import pack3.Calculator;
+public class TestApp {
+    public static void main(String[] args) {
+        MathOperations math = new MathOperations();
+        StringOperations stringOps = new StringOperations();
+        Calculator calculator = new Calculator();
+        int result1 = math.add(10, 5);
+        int result2 = math.subtract(10, 5);
+        String result3 = stringOps.concatenate("Hello, ", "world!");
+        String result4 = stringOps.reverse("Java");
+        int result5 = calculator.multiply(6, 7);
+        String result6 = calculator.divide(10, 0);
+        System.out.println("Result of addition: " + result1);
+        System.out.println("Result of subtraction: " + result2);
+        System.out.println("Concatenated string: " + result3);
+        System.out.println("Reversed string: " + result4);
+        System.out.println("Result of multiplication: " + result5);
+        System.out.println("Result of division: " + result6);
+    }
+}
