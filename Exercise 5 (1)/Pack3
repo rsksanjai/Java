@@ -1,0 +1,12 @@
+package pack3;
+public class Calculator {
+    public int multiply(int a, int b) {
+        return a * b;
+    }
+    public String divide(int a, int b) {
+        if (b == 0) {
+            return "Cannot divide by zero!";
+        }
+        return String.valueOf((double) a / b);
+    }
+}
